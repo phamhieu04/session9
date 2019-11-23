@@ -1,16 +1,75 @@
-//part6
+//part2
 
-listQ=['ST  ','BD  ','BTL ','CG  ','DD  ','HBT ']
-listDS=["150.300","246.100","333.300","266.800","420.900","318.000"]
-listDT=["117.43","9.2240","43.350","12.040","9.9600","10.090"]
-listMDDC=[]
-print("Quan |","  Km2  ","|","Danso  |","Mat do dan cu")
-sum=0
-for i in range(len(listQ)):
-    a=float(listDS[i])/float(listDT[i])
-    listMDDC.append(a)
-for i in range(len(listQ)):
-    print(listQ[i],"|",listDS[i],"|",listDT[i],"|",listMDDC[i],sep=' ')
-for i in range(len(listQ)):
-    sum=float(listMDDC[i])+sum
-print("Mat do dan cu trung binh:",sum/len(listQ))
+# list=['1.blue','2.red','3.teal','4.green']
+# print("our colour list:",*list,sep='\n')
+# ask=input("Item to delete:")
+# print("our new color list:")
+
+# red=str("1.red")
+# teal=str("2.teal")
+# green=str("3.green")
+
+# if ask==1:
+#     list.remove('1.blue')
+#     list[1]=red
+#     list[2]=teal
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask==2:
+#     list.remove('2.red')
+#     list[2]=teal
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask==1:
+#     list.remove('3.teal')
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask==4:
+#     list.remove('4.green')
+#     print(*list,sep='\n')
+# if ask=="blue":
+#     list.remove('1.blue')
+#     list[1]=red
+#     list[2]=teal
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask=="red":
+#     list.remove('2.red')
+#     list[2]=teal
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask=="teal":
+#     list.remove('3.teal')
+#     list[3]=green
+#     print(*list,sep='\n')
+# if ask=="green":
+#     list.remove('4.green')
+#     print(*list,sep='\n')
+
+# ---------------------------------
+
+from turtle import*
+
+
+color("red")
+begin_fill()
+forward(100)
+end_fill()
+
+color("blue")
+begin_fill()
+forward(100)
+end_fill()
+
+color("teal")
+begin_fill()
+forward(100)
+end_fill()
+
+color("green")
+begin_fill()
+forward(100)
+end_fill()
+
+
+mainloop()
