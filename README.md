@@ -1,16 +1,20 @@
-//part6
+//part3
 
-listQ=['ST  ','BD  ','BTL ','CG  ','DD  ','HBT ']
-listDS=["150.300","246.100","333.300","266.800","420.900","318.000"]
-listDT=["117.43","9.2240","43.350","12.040","9.9600","10.090"]
-listMDDC=[]
-print("Quan |","  Km2  ","|","Danso  |","Mat do dan cu")
+
+# list=[1,5,11,14,15,17,20,25,27,30]
+# ask=int(input("enter a number:"))
+# if list.count(ask)==0:
+#     print("Not found in our list")
+# if list.count(ask)==1:
+#     n=list.index(ask)+1
+#     print("found,position:",n)
+
+# -------------------------------------------
+
+ask=input("Enter a list of number , seperate by ' ':")
+a=list(ask.split(' '))
+a=list(map(int,a))
 sum=0
-for i in range(len(listQ)):
-    a=float(listDS[i])/float(listDT[i])
-    listMDDC.append(a)
-for i in range(len(listQ)):
-    print(listQ[i],"|",listDS[i],"|",listDT[i],"|",listMDDC[i],sep=' ')
-for i in range(len(listQ)):
-    sum=float(listMDDC[i])+sum
-print("Mat do dan cu trung binh:",sum/len(listQ))
+for i in range(len(a)):
+    sum=sum+a[i]
+print("sum of all entered number:",sum)
